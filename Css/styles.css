@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+    font-family: Inter;
+    src: url("../assets/fonts/static/Inter-Regular.ttf") format("ttf");
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey01: hsl(0, 0%, 20%);
+    --Grey02: hsl(0, 0%, 12%);
+    --Grey03: hsl(0, 0%, 8%);
+    --small-font: 14px;
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--Grey03);
+}
+
+
+
+.box{
+    width: 380px;
+    min-height: 600px;
+    background-color: var(--Grey02);
+    margin: 100px auto;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.box > img{
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    border-radius: 50%;
+    
+    
+}
+
+.box > h1{
+    font-family: "inter";
+    margin: 20px 0;
+    margin-bottom: 3px;
+    font-size: 40px;
+    color: var(--White);
+}
+
+.des-green{
+    font-family: "Inter";
+    font-size: var(--small-font);
+    color: var(--Green);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.des{
+    color: var(--White);
+    font-family: "Inter";
+    font-size: var(--small-font);
+    margin-bottom: 20px;
+
+}
+
+.social-media{
+    
+    width: 90%;
+    
+
+}
+
+.social-media > div{
+    background-color: var(--Grey01);
+    width: 98%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 15px 5px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+}
+
+.social-media > div > p{
+    font-family: "Inter";
+    font-weight: 600;
+    color: var(--White);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.social-media > div:hover{
+    background-color: var(--Green);
+}
+.social-media > div:hover > p {
+    color: var(--Grey01);
+}
